@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl-Pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Sprawdzenie hasła</title>
+</head>
+<body>
+    <p id="wynik"></p>
+    <input type="text" id="pole"/>
+    <input type="submit" value="sprawdż Hasło" onclick="sprawdzHaslo()"/>
+    <script type="text/javascript">
+        function sprawdzHaslo()
+        {
+            var liczba = document.getElementById("pole").value;
+            if(liczba.length>=8)document.getElementById("wynik").innerHTML="Hasło jest wystarczająco długie";
+            else document.getElementById("wynik").innerHTML="Hasło jest za krótkie";
+        }
+    </script>
+    
+</body>
+</html>
